@@ -1,0 +1,12 @@
+.title {
+    font-size: 2vw;
+    padding: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+.bg-cover {
+    object-fit: cover;
+}

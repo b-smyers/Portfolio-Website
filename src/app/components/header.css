@@ -1,0 +1,14 @@
+.Header {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    background-color: rgba(127,127,127,0.75);
+}
+
+.Header * {
+    text-decoration: none;
+    color: white;
+    font-size: 2vw;
+    margin-left: 10px;
+    margin-right: 10px;
+}

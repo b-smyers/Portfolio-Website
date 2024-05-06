@@ -1,7 +1,7 @@
 export default function Page() {
     return (
         <>
-            <p>Landing Page</p>
+            <p>About Brendan Smyers</p>
         </>
     );
-}
+  }
