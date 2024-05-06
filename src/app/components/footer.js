@@ -4,7 +4,7 @@ export default function Footer() {
     const year = new Date().getFullYear();
     
     return (
-      <footer class="Footer">
+      <footer className="Footer">
         <p>{`© ${year} Brendan Smyers, All rights reserved.`}</p>
       </footer>
     );
