@@ -15,12 +15,11 @@ export default function Projects() {
                 </div>
             </div>
         </li>
-      );
+    );
 
-      return (
+    return (
         <div className='Project-List'>
-          <ul>{project_entries}</ul>
+            <ul>{project_entries}</ul>
         </div>
-      );
-
+    );
 }

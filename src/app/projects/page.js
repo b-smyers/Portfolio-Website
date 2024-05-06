@@ -4,7 +4,7 @@ import '../common.css';
 export default function Page() {
     return (
         <>
-            <h1 className="title center">Here's what I've worked on</h1>
+            <h1 className="title center">Here&aposs what I&aposve worked on</h1>
             <Projects/>
         </>
     );
