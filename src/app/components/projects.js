@@ -6,7 +6,7 @@ export default function Projects() {
         <li key={project.id}>
             <div className='Project-Entry'>
                 <div className='Project-Image'>
-                    <img className='Project-Thumbnail' src={project.src}/>
+                    <img className='Project-Thumbnail' src={project.src} alt={project.name}/>
                 </div>
                 <div class='Project-Details'>
                     <h2 className='Project-Name'>{project.name}</h2>
