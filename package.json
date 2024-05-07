@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d out -b gh-pages -r git@github.com:b-smyers/portfolio-website.git -f -t true --nojekyll",
+    "deploy": "gh-pages --dotfiles -d out -b gh-pages -r git@github.com:b-smyers/portfolio-website.git -f",
     "lint": "next lint"
   },
   "dependencies": {
