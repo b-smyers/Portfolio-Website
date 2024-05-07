@@ -2,12 +2,16 @@
     font-size: 2vw;
 }
 
+.padding-10 {
+    padding: 10px;
+}
+
 .padding-20 {
     padding: 20px;
 }
 
 .soft-box {
-    background-color: rgba(111,111,111,0.65);
+    background-color: rgba(111,111,111,0.95);
     border-radius: 1vw;
 }
 
@@ -15,15 +19,13 @@
     object-fit: cover;
 }
 
-.display-flex {
-    display: flex;
-}
-
 .flex-column {
+    display: flex;
     flex-direction: column;
 }
 
 .flex-row {
+    display: flex;
     flex-direction: row;
 }
 

@@ -1,10 +1,11 @@
 import { project_data } from '../data/project-data.js';
 import './projects.css';
+import '../common.css';
 
 export default function Projects() {
     const project_entries = project_data.map(project =>
         <li key={project.id}>
-            <div className='Project-Entry'>
+            <div className='Project-Entry soft-box'>
                 <div className='Project-Image'>
                     <img className='Project-Thumbnail' src={project.src} alt={project.name}/>
                 </div>

@@ -1,12 +1,13 @@
 import Link from "next/link";
 import "./header.css";
+import '../common.css';
 
 export default function Header() {
     return (
         <header className="Header">
-            <Link href="/">Home</Link>
-            <Link href="/about">About</Link>
-            <Link href="/projects">Projects</Link>
+            <Link className="soft-box padding-10" href="/">Home</Link>
+            <Link className="soft-box padding-10" href="/about">About</Link>
+            <Link className="soft-box padding-10" href="/projects">Projects</Link>
         </header>
     );
 }
