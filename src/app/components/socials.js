@@ -10,9 +10,5 @@ export default function Socials() {
         </li>
     );
 
-    return (
-        <>
-            <ul className='center'>{social_entries}</ul>
-        </>
-    );
+    return <ul className='Social-List'>{social_entries}</ul>;
 }
