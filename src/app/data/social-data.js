@@ -15,4 +15,10 @@ export const social_data = [{
     name: 'Outlook',
     link: 'mailto:bs602422@ohio.edu',
     src: './assets/icons/outlook.svg'
+},
+{
+    id: 3,
+    name: 'Handshake',
+    link: 'https://ohio.joinhandshake.com/stu/users/49836918',
+    src: './assets/icons/handshake.png'
 }]
