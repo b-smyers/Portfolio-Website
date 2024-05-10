@@ -2,7 +2,6 @@
 
 import React, { useRef, useEffect } from 'react';
 import './background.css';
-import { Waiting_for_the_Sunrise } from 'next/font/google';
 
 class Particle {
     constructor(x, y, color) {

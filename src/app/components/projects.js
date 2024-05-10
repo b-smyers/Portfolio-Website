@@ -1,3 +1,4 @@
+import Link from 'next/link.js';
 import { project_data } from '../data/project-data.js';
 import './projects.css';
 import '../common.css';
@@ -7,12 +8,16 @@ export default function Projects() {
         <li key={project.id}>
             <div className='Project-Entry soft-box'>
                 <div className='Project-Image'>
-                    <img className='Project-Thumbnail' src={project.src} alt={project.name}/>
+                    <Link href={`/projects/${project.id}`}>
+                        <img className='round img-cover' src={project.srcs[0]} alt={project.name}/>
+                    </Link>
                 </div>
                 <div class='Project-Details'>
-                    <h2 className='Project-Name'>{project.name}</h2>
-                    <i className='Project-Role'>{project.role}</i>
-                    <p className='Project-Brief'>{project.brief}</p>
+                    <Link href={`/projects/${project.id}`}>
+                        <h2 className='Project-Name title'>{project.name}</h2>
+                    </Link>
+                    <i className='Project-Role text'>{project.role}</i>
+                    <p className='Project-Brief text'>{project.brief}</p>
                 </div>
             </div>
         </li>

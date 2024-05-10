@@ -1,0 +1,16 @@
+.Project-Panel {
+    max-width: 70rem;
+    margin: auto;
+}
+
+.Image-Panel {
+    margin-right: 10px;
+}
+
+.Image-List {
+    list-style-type: none;
+}
+
+.Pad-Below {
+    padding-bottom: 20px;
+}
