@@ -1,7 +1,7 @@
-'use client'
+"use client"
 
-import React, { useRef, useEffect } from 'react';
-import './background.css';
+import React, { useRef, useEffect } from "react";
+import "./background.css";
 
 class Particle {
     constructor(x, y, color) {
@@ -30,7 +30,7 @@ class Particle {
     draw(ctx) {
         if (this.dead) { return; }
 
-        ctx.fillStyle = `rgba(${this.color.join(',')},${this.alpha})`;
+        ctx.fillStyle = `rgba(${this.color.join(",")},${this.alpha})`;
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
         ctx.fill();
@@ -73,7 +73,7 @@ class Firework {
 
     draw(ctx) {
         if (!this.exploding) {
-            ctx.fillStyle = '#F0F0F0';
+            ctx.fillStyle = "#F0F0F0";
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
             ctx.fill();
@@ -103,7 +103,7 @@ export default function Background() {
         const draw = (ctx, width, height) => {
             ctx.clearRect(0, 0, width, height); // Clear the canvas before drawing
             // Draw commands here
-            // ctx.fillStyle = '#000000';
+            // ctx.fillStyle = "#000000";
             // ctx.fillRect(0, 0, width, height);
 
             // Remove spent fireworks from the array
@@ -116,7 +116,7 @@ export default function Background() {
             }
             
             // Update each firework
-            ctx.fillStyle = '#F0F0F0';
+            ctx.fillStyle = "#F0F0F0";
             for (let i = 0; i < fireworks.length; i++) {
                 fireworks[i].update();
                 fireworks[i].draw(ctx);
@@ -124,7 +124,7 @@ export default function Background() {
         };
 
         const canvas = canvasRef.current;
-        const ctx = canvas.getContext('2d');
+        const ctx = canvas.getContext("2d");
 
         // Draw loop
         const intervalId = setInterval(() => {
@@ -140,5 +140,5 @@ export default function Background() {
         return () => clearInterval(intervalId);
     }, []);
 
-    return <canvas ref={canvasRef} className='canvas'/>;
+    return <canvas ref={canvasRef} className="canvas"/>;
 }

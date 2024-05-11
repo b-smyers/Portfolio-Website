@@ -1,6 +1,6 @@
 import Link from "next/link";
 import "./header.css";
-import '../common.css';
+import "../common.css";
 
 export default function Header() {
     return (
