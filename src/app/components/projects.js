@@ -13,7 +13,7 @@ export default function Projects() {
                     </Link>
                 </div>
                 <div class="Project-Details">
-                    <Link href={`/projects/${project.id}`}>
+                    <Link href={`/projects/${project.id}`} className="Link">
                         <h2 className="Project-Name title">{project.name}</h2>
                     </Link>
                     <i className="Project-Role text">{project.role}</i>
