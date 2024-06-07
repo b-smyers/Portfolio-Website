@@ -1,4 +1,5 @@
-export const project_data = [{
+export const project_data = [
+{
     id: 0,
     name: "Dungeon Odyssey",
     role: "Solo Developer",
@@ -37,4 +38,15 @@ export const project_data = [{
     brief: "The bridge truss solver was created using python and matplotlib to analyze and optimize bridge truss designs. The program can handle custom materials and their compressive and tensile strengths.",
     long_description: "This project marks my debut on GitHub, sparked by a high school physics assignment where we were challenged to create the most effecient balsa wood bridge. While conventional design methods involved sketches or improvisation, our bridges were assessed based on their weight-to-strength ratio. Because of this, I developed a Python truss analysis program to evaluate designs beforehand. This program identifies compressive and tensile forces within the members and visualizes stress levels using a color-coded system, considering material strengths. Additionally, I experimented with a genetic algorithm to discover optimal designs, although creating an unbreakable fitness function proved extremely difficult, resulting in some unconventional yet intriguing designs. While I utilized the program to judge my bridge, another strategy emerged: guiding forces into the sides of the test stand rather than from the top surface. Implementing this tactic, my final bridge design shattered the class record, and has yet to be beaten.",
     srcs: ["./assets/images/BridgeTrussSolver1.png", "./assets/images/BridgeTrussSolver2.jpg"]
-}]
+},
+{
+    id: 4,
+    name: "Trebuchet Design Optimizer",
+    role: "Programmer",
+    link: "https://virtualtrebuchet.com/",
+    timeFrame: "October 2022",
+    brief: "The Trebuchet Design Optimizer programatically and systematically tweaks and analyzes trebuchet designs for maximum distance. The final design was then built, tested, and compared to the theorectical version.",
+    long_description: "This project was initially inspired by my highschool physics teacher. He had tasked us to create a trebuchet to launch a golfball as far as possible. We were provided with 2x4's, wood screws, a few power tools, and a drill press to create large holes (with supervision of course). Very early into the design phase of the project, the class stumbled into a website that could model the characteristics for any given trebuchet design. The website can tell me how good a design is, but It couldn't tell me the BEST trebucet design. So I decided to create a program in python to programatically optimize trebuchet designs by tweaking parameters and recording the results of the best designs. I got experience using Selenium to immitate user inputs, numpy for working with the data, and pandas to sort and export data to a spreadsheet. After running for a while the design my group settled on stood about 7 feet tall and achieved a max projectile distance of 165ft! When we eventually built and tested the trebuchet we achieved ~150ft of distance, only a 9% difference from the expected result. The trebuchet website also has a user projects page where users can compare the theoretical and actual distances, and our design was within the typical ~20% accuracy window. While programmatically simple, this was then one of my favorite projects because I was able to integrate my computer knowledge into real life design challenges.",
+    srcs: ["./assets/images/TrebuchetOptimizer1.jpg", "./assets/images/TrebuchetOptimizer2.jpg", "./assets/images/TrebuchetOptimizer3.jpg"]
+}
+]
